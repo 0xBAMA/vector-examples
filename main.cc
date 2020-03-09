@@ -8,20 +8,17 @@
 #include "glm/gtc/type_ptr.hpp" //to send matricies gpu-side
 #include "glm/gtx/transform.hpp"
 
-<<<<<<< HEAD
 #include <iostream>
-=======
 
 //usage details here: https://glm.g-truc.net/0.9.9/index.html
 
->>>>>>> 662b763d5fe5148ec866c29f4333c3202cb592c2
 
 using namespace glm;
 
 int main(int argc, char const *argv[])
 {
   vec3 vec;
-  mat3 mat = mat3(1.0f);
+  mat3 mat = mat3(1.0f);    //initialize with identity
 
   std::cout<<glm::to_string(mat)<<std::endl;
 
