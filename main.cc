@@ -8,7 +8,13 @@
 #include "glm/gtc/type_ptr.hpp" //to send matricies gpu-side
 #include "glm/gtx/transform.hpp"
 
+<<<<<<< HEAD
 #include <iostream>
+=======
+
+//usage details here: https://glm.g-truc.net/0.9.9/index.html
+
+>>>>>>> 662b763d5fe5148ec866c29f4333c3202cb592c2
 
 using namespace glm;
 
