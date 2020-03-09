@@ -6,6 +6,10 @@
 #include "glm/gtc/type_ptr.hpp" //to send matricies gpu-side
 #include "glm/gtx/transform.hpp"
 
+
+//usage details here: https://glm.g-truc.net/0.9.9/index.html
+
+
 using namespace glm;
 
 int main(int argc, char const *argv[])
