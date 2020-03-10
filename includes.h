@@ -22,7 +22,7 @@ using namespace glm;
 //usage details here: https://glm.g-truc.net/0.9.9/index.html
 
 
-#define FMT setw(5) << std::setprecision(2) << std::fixed //less mess
+#define FMT setw(5) << std::setprecision(2) << std::fixed   //less mess
 
 
 
