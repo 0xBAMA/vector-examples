@@ -8,8 +8,10 @@
 #include "glm/gtc/type_ptr.hpp" //to send matricies gpu-side
 #include "glm/gtx/transform.hpp"
 
+//random number generation
 #include <random>
 
+//io stuff
 #include <iostream>
 #include <iomanip>
 
@@ -18,6 +20,7 @@ using std::cout;
 
 using std::setw;
 
+//so you don't have to do 'glm::vec3' and 'glm::mat3' all over the place
 using namespace glm;
 //usage details here: https://glm.g-truc.net/0.9.9/index.html
 
