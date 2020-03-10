@@ -5,7 +5,7 @@ int main(int argc, char const *argv[])
 
   mat3 mat = mat3(1.0f);    //initialize with identity
 
-  cout << "Identity matrix:" << endl << endl;
+  cout << endl << "Identity matrix:" << endl << endl;
   print_matrix(mat);        //print the identity matrix
 
   //reference is done with mat[column][row]

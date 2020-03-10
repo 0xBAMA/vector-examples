@@ -1,3 +1,3 @@
 all:
-	g++ main.cc -o exe
-	./exe
+	@g++ main.cc -o exe
+	@./exe
