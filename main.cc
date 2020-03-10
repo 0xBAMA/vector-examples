@@ -8,10 +8,26 @@ int main(int argc, char const *argv[])
   cout << endl << "Identity matrix:" << endl << endl;
   print_matrix(mat);        //print the identity matrix
 
-  //reference is done with mat[column][row]
-  // here just setting first column, first and second row values to 5
-  mat[0][0] = 5.0f;
-  mat[0][1] = 5.0f;
+
+
+
+
+  std::random_device rd;  //Will be used to obtain a seed for the random number engine
+  std::mt19937 gen(rd()); //Standard mersenne_twister_engine seeded with rd()
+  std::uniform_int_distribution<> dis(1, 15);
+
+  // dis(gen) now gives a random number between 1 and 15
+  for (int col = 0; col < 3; col++)
+    for (int row = 0; row < 3; row++)
+      mat[col][row] = dis(gen); //reference is done with mat[column][row]
+
+
+
+
+
+
+
+
 
   cout << "Change some values:" << endl << endl;
   print_matrix(mat);          //print the matrix with the changes
