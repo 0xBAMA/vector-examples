@@ -29,3 +29,15 @@ void print_matrix(mat3 mat)
   cout << setw(5) << mat[0][2] << " " << setw(5) << mat[1][2] << " " << setw(5) << mat[2][2] << endl;
   cout << endl;
 }
+
+vec3 print_matrix_times_vector(mat3 mat, vec3 vec)
+{
+  vec3 temp = mat*vec;
+
+  cout << setw(5) << mat[0][0] << " " << setw(5) << mat[1][0] << " " << setw(5) << mat[2][0] << "       " << setw(5) << vec[0] << "      " << setw(5) << temp[0] << endl;
+  cout << setw(5) << mat[0][1] << " " << setw(5) << mat[1][1] << " " << setw(5) << mat[2][1] << "     * " << setw(5) << vec[1] << "    = " << setw(5) << temp[1] << endl;
+  cout << setw(5) << mat[0][2] << " " << setw(5) << mat[1][2] << " " << setw(5) << mat[2][2] << "       " << setw(5) << vec[2] << "      " << setw(5) << temp[2] << endl;
+  cout << endl;
+
+  return temp;
+}
