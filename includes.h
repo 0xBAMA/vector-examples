@@ -11,3 +11,18 @@
 #include <iostream>
 using std::endl;
 using std::cout;
+
+
+using namespace glm;
+//usage details here: https://glm.g-truc.net/0.9.9/index.html
+
+
+
+void print_matrix(mat3 mat)
+{
+  // std::cout<<glm::to_string(mat)<<std::endl; //this works, but it's ugly
+  cout << mat[0][0] << " " << mat[1][0] << " " << mat[2][0] << endl;
+  cout << mat[0][1] << " " << mat[1][1] << " " << mat[2][1] << endl;
+  cout << mat[0][2] << " " << mat[1][2] << " " << mat[2][2] << endl;
+  cout << endl;
+}
