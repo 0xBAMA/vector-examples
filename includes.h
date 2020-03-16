@@ -4,10 +4,21 @@
 #define GLM_SWIZZLE_XYZW
 #include "glm/glm.hpp" //general vector types
 #include "glm/ext.hpp" //string cast
-#include "glm/gtx/string_cast.hpp"
+#include "glm/gtx/string_cast.hpp"  //also string cast, I guess
 #include "glm/gtc/matrix_transform.hpp" // for glm::ortho
 #include "glm/gtc/type_ptr.hpp" //to send matricies gpu-side
-#include "glm/gtx/transform.hpp"
+#include "glm/gtx/transform.hpp"  //rotations, scaling, etc
+
+//Don't worry a super huge amount about what these declarations are - it's just stuff I've had to use,
+// so I just kind of carry it around as part of the include. So long as you are compiling with the
+// glm folder in the same directory, you can treat it as a black box and don't have to worry about
+// anything in it.
+
+
+
+
+
+
 
 //random number generation
 #include <random>
